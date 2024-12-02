@@ -118,7 +118,7 @@ public class ArrCharOps {
             n[i]=arr1[i];
         }
         int j=0;
-        for(int i=arr1.length;i<=arr2.length;i++)
+        for(int i=arr1.length;i<n.length;i++)
         {
             n[i]=arr2[j];
             j++;
