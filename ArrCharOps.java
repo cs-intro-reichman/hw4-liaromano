@@ -112,13 +112,13 @@ public class ArrCharOps {
     */
     public static char[] concat(char[] arr1, char[] arr2) {
         // Replace the following statement with your code
-        char [] n= new char [(arr1.length+arr2.length)-2];
+        char [] n= new char [arr1.length+arr2.length];
         for(int i=0;i<arr1.length;i++)
         {
             n[i]=arr1[i];
         }
         int j=0;
-        for(int i=arr1.length+1;i<arr2.length;i++)
+        for(int i=arr1.length;i<arr2.length;i++)
         {
             n[i]=arr2[j];
             j++;
