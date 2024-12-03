@@ -26,15 +26,13 @@ public class MyString {
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
         // Replace the following statement with your code
-       String str1n=lowerCase(str1);
-       String str2n= lowerCase(str2);
        boolean isContains=false;
-       int lastIndex= str1n.length()-str2n.length()+1;;
-       if(str1n.length()==0 || str2n.length()==0)
+       int lastIndex= str1.length()-str2.length()+1;;
+       if(str2.length()==0)
        {
-        return false;
+        return true;
        }
-       if(str1n.length()<str2n.length())
+       if(str1.length()<str2.length())
        {
         return false;
        }
@@ -42,12 +40,12 @@ public class MyString {
        {
         for(int i=0;i<lastIndex&& !isContains;i++)
         {
-            if(str1n.charAt(i)==str2n.charAt(0))
+            if(str1.charAt(i)==str2.charAt(0))
             {
                 isContains=true;
-                for(int j=0;j<str2n.length()&& isContains;j++)
+                for(int j=0;j<str2.length()&& isContains;j++)
                 {
-                    isContains=(str2n.charAt(j)==str1n.charAt(i+j));
+                    isContains=(str2.charAt(j)==str1.charAt(i+j));
                 }
             }
 
