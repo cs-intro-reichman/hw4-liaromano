@@ -29,7 +29,11 @@ public class MyString {
        String str1n=lowerCase(str1);
        String str2n= lowerCase(str2);
        boolean isContains=false;
-       int lastIndex= str1n.length()-str2n.length()+1;
+       int lastIndex= str1n.length()-str2n.length()+1;;
+       if(str1n.length()==0 || str2n.length()==0)
+       {
+        return false;
+       }
        if(str1n.length()<str2n.length())
        {
         return false;
