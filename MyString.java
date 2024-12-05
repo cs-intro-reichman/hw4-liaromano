@@ -19,7 +19,17 @@ public class MyString {
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
         // Replace the following statement with your code
-        String n=str.toLowerCase();
+        String n="";
+       char x=' ';
+       for(int i=0;i<str.length();i++)
+       {
+        x=str.charAt(i);
+        if(str.charAt(i)>='A'&&str.charAt(i)<='Z')
+        {
+            x=(char)(x+32);
+        }
+        n=n+x;
+       }
         return n;
     }
 
